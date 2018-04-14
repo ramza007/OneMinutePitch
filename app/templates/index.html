@@ -7,14 +7,13 @@
 {% block content %}
 
 
-    <div class="container" style="font-family: 'Russo One', sans-serif;">
+    <div class="container" style="font-family: 'Russo One', sans-serif;" style="text-align: center;">
       <div class="row" style="margin-top:30px">
-        <h4 class="text-left"><a class="btn btn-primary" href="/add/category"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>   Add Category </a></h4>
+        <h4 class="text-left"><a class="btn btn-primary" href="/add/category"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>   Add Your Category </a></h4>
 
           {{ macro.displayCategoryList(categories) }}
         </div>
     </div>
-    
 
 {% endblock %}
 {% macro displayPitches(pitch_list) %}
@@ -26,12 +25,11 @@
               <h3>{{pitches.content}}</h3>
           </div>
           <div class="col-md-6">
-            <p>POSTED: {{pitches.date_posted.strftime('%Y/%m/%d at %r')}}</p>
+            <p>POSTED: {{pitches.date_posted.strftime('%Y/%m/%d || %r')}}</p>
             <a href="/pitch/{{pitches.id}}"><h4>COMMENT</h4></a>
           </div>
         </div>
       </div>
     </div>
-    <p>RAMZA|2018</p>
   {% endfor %}
 {% endmacro %}

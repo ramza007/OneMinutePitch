@@ -27,8 +27,7 @@
 #### technologies used 
 * python ( **ver 3.6** )
 * Flask framework
-* SQLAlchemy
-* PSQL Database
+* PostgreSQL
 ---
 
 ### License under [***MIT***](https://github.com/ramza007/MinutePitch/blob/master/LICENSE)

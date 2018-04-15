@@ -14,7 +14,9 @@
           <h3>{{pitches.content}}</h3>
         </div>
 
-        <!-- comments -->
+<!--end of content block-->
+
+<!-- comments block -->
         <div class="col-md-6 col-offset-1">
           <table>
             <tr>
@@ -26,8 +28,6 @@
             </tr>
           </table>
 
-
-
          {% if comment %}
          {{ macro.displaySpecificPitch(comment)}}
          <hr>
@@ -38,5 +38,6 @@
 
     </div>
   </div>
+<!--end of comments block-->
 
 {% endblock %}

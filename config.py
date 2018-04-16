@@ -5,8 +5,6 @@ class Config:
 
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-    #SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://razma:ramza123@localhost/pitch'
 
     SECRET_KEY = "try harder"
@@ -23,9 +21,7 @@ class Config:
 
 class ProdConfig(Config):
     """Production configuration class that inherits from the main configurations class"""
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://razma:ramza123@localhost/pitch'# os.environ.get("DATABASE_URL")
-    #SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://razma:ramza123@localhost/pitch'
 
 class DevConfig(Config):
     """Configuration class for development stage of the app"""
@@ -35,5 +31,4 @@ class DevConfig(Config):
 config_options = {
     'development': DevConfig,
     'production': ProdConfig
-    #'test':TestConfig
 }

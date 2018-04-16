@@ -19,14 +19,14 @@ A web application that allows the users to post pitches, comment and vote on pit
 * $ cd MinutePitch
 * $ python3.6 -m venv virtual (install virtual environment)
 * $ source virtual/bin/activate or virtual/scripts/activate
-* $ python3.6 -m pip install -r requirements.txt (install all dependencies)
+* $ python3.6 -m pip install -r requirements.txt (to install all dependencies)
 * $ ./start.sh to run the app
 
 ---
 
 #### technologies used 
 * python ( **ver 3.6** )
-* Flask framework
+* flask microframework
 * PostgreSQL
 ---
 

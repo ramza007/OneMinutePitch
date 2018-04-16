@@ -15,7 +15,7 @@ A web application that allows the users to post pitches, comment and vote on pit
 ## Setup/Installation Requirements
 
 * open my [GitHub](https://github.com/ramza007)
-* find my repo *Minute Pitch*
+* find repo named *Minute Pitch*
 * $ cd MinutePitch
 * $ python3.6 -m venv virtual (install virtual environment)
 * $ source virtual/bin/activate or virtual/scripts/activate
